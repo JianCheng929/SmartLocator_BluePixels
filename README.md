@@ -4,6 +4,7 @@ An IoT item tracker that warns you **before** you lose your belongings, instead 
 
 Built for students at Johor Matriculation College (KMJ) who often misplace **personal belongings** such as bags, pencil boxes and other items in dormitories. The device sits with your item, measures how far your phone is using Bluetooth Low Energy (BLE), and alerts you with a buzzer and phone notifications when you start moving away. A barometric sensor also tells you which floor the item is on.
 
+
 > Final project for **CT125 Digital Technology**
 
 ---
