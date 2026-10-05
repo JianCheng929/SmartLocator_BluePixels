@@ -1,0 +1,20 @@
+# Firebase (any location)
+**/google-services.json
+**/firebase_options.dart
+
+# Signing
+*.jks
+*.keystore
+key.properties
+
+# Local / build
+local.properties
+**/build/
+**/.dart_tool/
+**/.idea/
+
+# Old duplicate project folder (root level only)
+/smartlocator_bluepixels/
+
+# Firmware secrets
+secrets.h
