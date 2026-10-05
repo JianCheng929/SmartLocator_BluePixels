@@ -4,9 +4,12 @@ An IoT item tracker that warns you **before** you lose your belongings, instead 
 
 Built for students at Johor Matriculation College (KMJ) who often misplace **personal belongings** such as bags, pencil boxes and other items in dormitories. The device sits with your item, measures how far your phone is using Bluetooth Low Energy (BLE), and alerts you with a buzzer and phone notifications when you start moving away. A barometric sensor also tells you which floor the item is on.
 
+<p align="center">
+  <img src="docs/images/prototype3.jpg" width="280">
+  <img src="docs/images/prototype4.jpg" width="280">
+</p>
 
 > Final project for **CT125 Digital Technology**
-
 ---
 
 ## Features
@@ -78,7 +81,16 @@ Built for students at Johor Matriculation College (KMJ) who often misplace **per
 | 18650 charger + 5V boost module (USB-C) | Charging and stable 5 V output | |
 | 3D-printed snap-fit casing | Enclosure (designed in TinkerCad) | |
 
-The circuit diagram is in the project report (Cirkit Designer).
+### Circuit diagram
+
+![Circuit diagram](docs/images/circuit_diagram.png)
+
+### Prototype
+
+<p align="center">
+  <img src="docs/images/prototype1.jpg" width="280">
+  <img src="docs/images/prototype2.jpg" width="280">
+</p>
 
 ---
 
@@ -197,6 +209,18 @@ The ESP32 uses the **Nordic UART Service (NUS)**:
 - ESP32 to app: a **JSON status stream every second** (zone, floor, battery, calibration progress, etc.)
 - App to ESP32: short text commands, for example `ITEM:<name>`, `FLOOR:<n>`, `BATT:RESET`, plus buzzer beep/volume and time-sync commands
 - Writes use `withoutResponse: true`. Using `false` makes Android bond with the ESP32, which then silently blocks writes.
+
+---
+
+## Screenshots
+
+| Item upload & calibration | Tracking status |
+|---|---|
+| ![Item upload and pressure calibration](docs/images/item_upload_pressure.png) | ![Tracking status](docs/images/Tracking_status.png) |
+
+| BT signal & buzzer alerts | Reconnect & disconnect |
+|---|---|
+| ![BT signal and buzzer alerts](docs/images/bt_buzzer_signal.png) | ![Reconnect and disconnect](docs/images/reconnect_disconnect_bt.png) |
 
 ---
 
