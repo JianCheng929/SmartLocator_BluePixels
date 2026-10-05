@@ -29,7 +29,7 @@ Preferences prefs;
 unsigned long totalUsageSeconds = 0;
 unsigned long lastSaveTime      = 0;
 // ── USER SETTINGS ──────────────────────────────────────────
-#define OWNER_PHONE_NAME  "HONOR200LITE"
+#define OWNER_PHONE_NAME  "YOUR_PHONE_BLE_NAME"
 #define BATT_LOW_THRESH   20
 
 // ── PINS ───────────────────────────────────────────────────

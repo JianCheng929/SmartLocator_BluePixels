@@ -24,7 +24,7 @@ const int RSSI_ALERT_THRESHOLD = -85;
 const int RSSI_SAFE_THRESHOLD  = -78;
 
 // ============== TARGET ==============
-String ownerPhoneName = "HONOR200LITE";
+String ownerPhoneName = "YOUR_PHONE_BLE_NAME";  // <-- change to your phone's BLE name
 
 // ============== STATE ==============
 int  lastRSSI     = -100;
